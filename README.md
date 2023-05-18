@@ -1,5 +1,43 @@
 # LinuxTerminal
 Linux Terminal Commands
+| TASK | SOLUTION |
+| ------ | ------ |
+| 1. Посмотреть, где я | pwd |
+| 2. Cоздать папку | mkdir hw1 |
+| 3. Зайти в папку | cd hw1 |
+| 4. Создать 3 папки | mkdir hw2 hw3 hw4 |
+| 5. Зайти в любоую папку | cd hw2 |
+| 6. Создать 5 файлов (3 txt, 2 json) | touch file1.txt file2.txt file3.txt file4.json file5.json |
+| 7. Создать 3 папки | mkdir hw5 hw6 hw7 |
+| 8. Вывести список содержимого папки  | ls -la |
+| - открыть любой txt файл | vim file1.txt |
+| - написать туда что-нибудь, любой текст. | {"name":"Serg"} |
+| - сохранить и выйти. | esc :wq |
+| 9. Выйти из папки на уровень выше | cd .. |
+| 10. Переместить любые 2 файла, которые вы создали, в любую другую папку | mv file1.txt file2.txt hw6/ |
+| 11. Скопировать любые 2 файла, которые вы создали, в любую другую папку | cp file4.json file5.json hw6/ |
+| 12. Найти файл по имени | find . -name "file1.txt" |
+| 13. Просмотреть содержимое в реальном времени (команда grep), как она работает | grep "" file1.txt |
+| 14. Вывести несколько первых строк из текстового файла | head file1.txt -n 3 |
+| 15. Вывести несколько последних строк из текстового файла | tail file1.txt -n 3 |
+| 16. Просмотреть содержимое длинного файла (команда less), как она работает | less file1.txt |
+| 17. Вывести дату и время | date или date + "%A %d %B" (полное наименование дня/месяца) |
+
+***Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8
+
+```sh
+vim firstscript
+cd hw1
+mkdir hw2 hw3 hw4
+cd hw2
+touch file1.txt file2.txt file3.txt file4.json file5.json
+mkdir hw5 hw6 hw7
+ls -la
+mv file1.txt file2.txt hw6/
+esq: wq
+./firstscript
+```
+
 ##### 1. Сделать папку dir_1
 ```bat
 mkdir dir_1
